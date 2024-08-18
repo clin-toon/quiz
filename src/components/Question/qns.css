@@ -1,0 +1,95 @@
+.container {
+    position: relative;
+    top: 0px;
+    width: auto;
+
+}
+
+@media screen and (max-width : 600px){
+   
+
+    .questions {
+        font-size: 16px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+}
+
+@media screen  and (max-width:1000px){
+    .container {
+        position: relative;
+        top: 1px;
+        width: auto;
+    }
+    .optionsContainer {
+        margin: 0px 0px;
+        position: relative;
+        height: auto;
+        padding: 6px 5px;
+    }   
+}
+
+.optionsContainer {
+    margin: 0px 0px;
+    position: relative;
+    height: auto;
+    padding: 6px 5px;
+    border-radius: 18px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 4px;
+    color: black;
+}
+
+.left-top {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+.right-top {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.left-bottom {
+    position: absolute;
+    top :-10px;
+    left: 10px;
+}
+
+.right-bottom{
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+}
+
+.buttons {
+    margin: 60px;
+    right: 500px;
+}
+
+button {
+    margin: 0px 0px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 14px;
+    height: auto;
+    width: 100%;
+    padding: 3px;
+}
+
+.qns {
+    margin: 10px 0px;
+}
+
+.questions{
+    color: black;;
+}

@@ -1,0 +1,27 @@
+.validate-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 12x;
+}
+
+
+.icon {
+    color: lightgreen;
+    margin-right: 5px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.wrong {
+    color: tomato;
+    margin-right: 5px;
+    font-size: larger;
+    font-weight: bold;
+}
