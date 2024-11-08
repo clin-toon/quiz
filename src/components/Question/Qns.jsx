@@ -3,6 +3,7 @@ import { QuizContext } from "../../QuizContext/QuizContext";
 import "./qns.css";
 
 const Qns = (props) => {
+  
   const { dispatch, question, time, questionCat } = useContext(QuizContext);
   const [answer, setAnswer] = useState("");
   const [apiQuestion, setQuestion] = useState("");
@@ -63,6 +64,7 @@ const Qns = (props) => {
       dispatch({ type: "HIDE_CORRECT" });
       dispatch({ type: "HIDE_INCORRECT" });
       dispatch({ type: "HIDE_SPINNER" });
+
       if (question >= 10) {
         dispatch({ type: "SHOW_FINAL_SCORE" });
       } else {
@@ -83,7 +85,7 @@ const Qns = (props) => {
     if (answer === opt4) {
       dispatch({ type: "SHOW_CORRECT" });
       dispatch({ type: "INCREASE_SCORE", payload: 1 });
-      setTimeout(getAnotherQns, 2000);
+      setTimeout(getAnotherQns, 3000);
     } else {
       dispatch({ type: "SHOW_INCORRECT" });
       setTimeout(getAnotherQns, 2000);
